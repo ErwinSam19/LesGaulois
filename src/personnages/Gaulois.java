@@ -14,13 +14,16 @@ public class Gaulois {
 
 
 
-
+	public void boirePotion(int forcePotion) {
+		parler("Merci Druide, je sens que ma force est "+forcePotion+"fois dÃ©cuplÃ©e");
+		
+	}
 
 	public Gaulois(String nom, int force) {
 		super();
 		this.nom = nom;
 		this.force = force;
-		parler("Idefix!");
+		
 	}
 	
 	public void parler(String texte) {
@@ -33,8 +36,8 @@ public class Gaulois {
 		
 	}
 	public void frapper(Romain romain) {
-		System.out.println(nom + "envoie un gand coup dans la mâchoire de " + romain.getNom());
-		romain.recevoirCoup(force/3);
+		System.out.println(nom + "envoie un gand coup dans la mï¿½choire de " + romain.getNom());
+		romain.recevoirCoup((force/3)*effetPotion);
 		
 	}
 
@@ -43,8 +46,8 @@ public class Gaulois {
 		return nom;
 	}
 	public static void main(String[] args) {
-		Gaulois asterix= new Gaulois( "Astérix ", 8);
+		Gaulois asterix= new Gaulois( "Astï¿½rix ", 8);
 		System.out.println(asterix);
-		
+		asterix.boirePotion(3);
 	}
 }

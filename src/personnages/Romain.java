@@ -8,6 +8,7 @@ public class Romain {
 		super();
 		this.nom = nom;
 		this.force = force;
+		parler("un Gaulois!");
 	}
 
 	public String getNom() {
@@ -32,7 +33,12 @@ public class Romain {
 			parler("J'abandonne...");
 
 		}
+	
 		
+	}
+	public static void main(String[] args) {
+		Romain cesar = new Romain("cesar",10);
+		System.out.println(cesar);
 	}
 
 }
