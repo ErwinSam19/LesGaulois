@@ -36,9 +36,6 @@ public class Romain {
 	
 		
 	}
-	public static void main(String[] args) {
-		Romain cesar = new Romain("cesar",10);
-		System.out.println(cesar);
-	}
+	
 
 }

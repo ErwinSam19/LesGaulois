@@ -45,9 +45,5 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
-	public static void main(String[] args) {
-		Gaulois asterix= new Gaulois( "Ast�rix ", 8);
-		System.out.println(asterix);
-		asterix.boirePotion(3);
-	}
+	
 }

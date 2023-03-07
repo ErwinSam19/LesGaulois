@@ -33,19 +33,15 @@ public class Druide {
 		return "Le druide " + nom + " : ";
 		
 	}
-	//fonction incomplÃ¨te
+	
 	public void preparerPotion() {
 		Random random= new Random();
 		force=random.nextInt(effetPotionMax);
 		if (force>7):
-			parler("J'ai prÃ©parÃ© une super potion de force",+force+);
+			parler("J'ai préparé une super potion de force",+force);
 		else:
-			parler("Je n'ai pas trouvÃ© les ma potion est seulement de force ",+force+);
+			parler("Je n'ai pas trouvé les ma potion est seulement de force ",+force);
 	}
-	public static void main(String[] args) {
-		Druide Panoramix = new Druide("Panoramix",5,10);
-		Panoramix.preparerPotion();
-		
-	}
+	
 
 }

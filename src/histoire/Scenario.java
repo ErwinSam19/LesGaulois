@@ -5,15 +5,15 @@ public class Scenario {
 	
 	public static void main(String[] args) {
 		Druide Panoramix= new Druide("Panoramix",5,10);
-		Gaulois Asterix= new Gaulois("AstÃ©rix",8);
+		Gaulois Asterix= new Gaulois("Astérix",8);
 		Romain minus = new Romain("minus",6);
-		Gaulois Obelix = new Gaulois("ObÃ©lix",1000);
+		Gaulois Obelix = new Gaulois("Obélix",1000);
 		System.out.println(Panoramix);
 		Panoramix.preparerPotion();
 		Panoramix.preparerPotion();
 		
 		Panoramix.booster(Obelix);
-		Obelix.parler("Par BÃ©nÃ©los, ce n'est pas juste !");
+		Obelix.parler("Par Bénélos, ce n'est pas juste !");
 		Asterix.boirePotion(6);
 		
 		Asterix.parler("Bonjour");
