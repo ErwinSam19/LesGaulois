@@ -36,6 +36,9 @@ public class Romain {
 	
 		
 	}
-	
+	public static void main(String[] args) {
+		Romain Minus = new Romain("Minus",6)
+		System.out.println(Minus);
+	}
 
 }
